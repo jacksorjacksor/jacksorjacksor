@@ -26,13 +26,12 @@ h3 {
 }
 
 .btn {
-  border: 0;
-  background-color: #fff;
-  color: #516dff;
-  padding: 30px 30px;
   font-family: inherit;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 15px;
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgb(255, 255, 255);
+  border-bottom: 25px solid transparent;
 }
 
 a {
@@ -40,7 +39,7 @@ a {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .btn:focus {
