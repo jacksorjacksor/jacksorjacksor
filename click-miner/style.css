@@ -1,0 +1,177 @@
+/* Boilerplate */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  margin: 10px;
+  border: 10px solid white;
+}
+
+h1 {
+  margin: 20px 0 0;
+  font-size: 300%;
+}
+
+.scores {
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.scoreElement {
+  margin: 10px 10px 0 10px;
+}
+/* Square  */
+.square {
+  height: 88px;
+  width: 88px;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winTextFormat {
+  font-size: 250%;
+  color: gold;
+}
+
+.winTextSoundTextFormat {
+  font-size: 250%;
+  color: black;
+}
+.winTextInvisible {
+  visibility: hidden;
+}
+
+.winTextVisible {
+  visibility: visible;
+}
+
+.square:hover:not([class*='wall'], .finalSquare) {
+  transform: scale(1.1);
+}
+/* Visible conditions */
+.wall2,
+.level1 {
+  background-color: green;
+}
+
+.wall3,
+.level2 {
+  background-color: darkslateblue;
+}
+
+.wall4,
+.level3 {
+  background-color: orange;
+}
+
+.wall5,
+.level4 {
+  background-color: red;
+}
+
+.wall6,
+.level5 {
+  background-color: blue;
+}
+
+.wall7,
+.level6 {
+  background-color: purple;
+}
+
+.wall8,
+.level7 {
+  background-color: brown;
+}
+
+.wall9,
+.level8,
+.finalSquare {
+  background-color: gold;
+}
+
+.arrow {
+  color: white;
+  font-size: 88px;
+}
+
+.north {
+  transform: rotate(-90deg);
+}
+.northeast {
+  transform: rotate(-45deg);
+}
+.east {
+  transform: rotate(0deg);
+}
+.southeast {
+  transform: rotate(45deg);
+}
+.south {
+  transform: rotate(90deg);
+}
+.southwest {
+  transform: rotate(135deg);
+}
+.west {
+  transform: rotate(180deg);
+}
+.northwest {
+  transform: rotate(225deg);
+}
+
+.winContainer {
+  border: 10px solid gold;
+}
+
+.description {
+  padding: 0 200px;
+}
+
+@media (max-width: 800px), (max-height: 950px) {
+  .square {
+    height: 40px;
+    width: 40px;
+    margin: 1px;
+  }
+
+  .arrow {
+    color: white;
+    font-size: 40px;
+  }
+
+  .square:hover:not([class*='wall'], .finalSquare) {
+    transform: scale(1);
+  }
+
+  .winTextFormat {
+    font-size: 100%;
+    color: gold;
+  }
+
+  .winTextSoundTextFormat {
+    font-size: 100%;
+    color: black;
+  }
+
+  .description {
+    padding: 0 20px;
+  }
+}

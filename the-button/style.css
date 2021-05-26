@@ -19,26 +19,29 @@ body {
   width: 100vw;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 8px;
-  padding: 8px;
-  border-radius: 8px;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 15px;
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgb(255, 255, 255);
+  border-bottom: 25px solid transparent;
 }
 
 a {
   text-decoration: none;
-  color: whitesmoke;
 }
 
-.link-button {
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 8px;
-  color: rgb(22, 22, 22);
+.btn:hover {
+  opacity: 0.8;
 }
 
-.link-button:hover,
-h1:hover {
-  color: whitesmoke;
-  background: rgba(0, 0, 0, 0.2);
+.btn:focus {
+  outline: 0;
 }

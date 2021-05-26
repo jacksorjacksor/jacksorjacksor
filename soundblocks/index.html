@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:;base64,=" />
+    <title>soundblocks</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>soundblocks</h1>
+      <h2>by jacksorjacksor</h2>
+      <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h2>play music play</h2>
+      <ul class="birds-list">
+        <li>
+          <button class="btn-audio">
+            <p class="possible-bird-name">layer 1</p>
+            <audio src="audio/layer1.mp3" id="audio-layer1" loop="true"></audio>
+          </button>
+        </li>
+        <li>
+          <button class="btn-audio">
+            <p class="possible-bird-name">layer 2</p>
+            <audio src="audio/layer2.mp3" id="audio-layer2" loop="true"></audio>
+          </button>
+        </li>
+        <li>
+          <button class="btn-audio">
+            <p class="possible-bird-name">layer 3</p>
+            <audio src="audio/layer3.mp3" id="audio-layer3" loop="true"></audio>
+          </button>
+        </li>
+      </ul>
+      <ul>
+        <button class="btn pause" id="pause-start-btn">Pause</button>
+        <button class="btn" id="restart-btn">Restart</button>
+        <button class="btn" id="reset-btn">Reset</button>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
