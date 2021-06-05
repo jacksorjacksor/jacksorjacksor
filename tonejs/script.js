@@ -1,17 +1,11 @@
-let loopBeat;
-let bassSynth;
+const playButton = document.querySelector('#playButton');
+const synth = new Tone.Synth().toDestination();
+const now = Tone.now();
 
-function setup() {
-  bassSynth = new Tone.MembraneSynth().toMaster();
-
-  loopBeat = new Tone.Loop(song, '4n');
-  Tone.Transport.start();
-  loopBeat.start(0);
+function sayHi() {
+  console.log('Hi!');
+  // trigger the attack immediately
+  synth.triggerAttackRelease('C4', '8n', now);
 }
 
-function song(time) {
-  //   bassSynth.triggerAttackRelease('c1', '8n', time);
-  console.log(time);
-}
-
-setup();
+playButton.addEventListener('click', sayHi);

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>The adaptive audio of “A Monster’s Expedition”</h1>
+      <h2>audioaudio ep. 1</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/IdMLiwzH4-8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <section id="transcript">
+        <h3>Transcript</h3>
+        <p>
+          <em
+            >Words by Richard Jackson - transcript of spoken dialogue, complete
+            with the disregard for grammar that I've come to expect from my own
+            use of the spoken language. Wow this was weird to type out.</em
+          >
+        </p>
+        <p>
+          Hello and welcome to episode 1 in a new series I'm putting together
+          called "audioaudio" which is just where I look at some game sounds and
+          music and... talk about them, because there are some really amazing
+          things going on and I figured it'd be a nice way for me to be able to
+          explain some concepts which I find are absolutely amazing
+        </p>
+        <p>
+          And I figured I'd start with talking about a puzzle game I've very
+          much enjoyed recently, "A Monster's Expedition Through Puzzling
+          Exhibitions" by Draknek and friends who we can see right here and a
+          special shout has to go to Eli Rainsberry who is responsible for the
+          audio of this game and I think they've done an absolutely incredible
+          job.
+        </p>
+        <p>
+          So, what I wanted to talk about was the use of responsive audio in
+          this game and to quickly go through definitions I figured I'd quickly
+          talk about the difference between "Horizontal" and "Vertical" audio
+          when we talk about adaptive design.
+        </p>
+        <p>
+          So, typically when we approach music which is cued by a player's
+          interaction which is what "Adaptive Music" is that we either have
+          blocks of sound which could be played at random depending on what the
+          player does, so that's referred to as "horizonal" because you're kind
+          of building your blocks as you go, or you have "vertical" which is
+          where we have layers of music and the player's location or
+          interactions or anything like that cues what combination of things are
+          done.
+        </p>
+        <p>
+          So for example you might start off in a very relaxed state and there
+          would only be one layer of music playing, like a flute, and then later
+          on as you get more intense that flautist could be joined by, you know,
+          drums, bass, kazoo and djembe and the vuvuzela casually chilling out
+          in the background as well for the extra drama.
+        </p>
+        <p>
+          And so that would referred to as "vertical" sound and I think this
+          game, "A Monster's Expedition", does such a lovely job of combining
+          elements of both of those ideas.
+        </p>
+        <p>
+          So, the idea for today is that we're going to be just playing through
+          the opening of this game there's an opening credits sequence that
+          happens about 5 minute in so we're going to playing up 'til then and I
+          think that's a great representation of how audio's presented through
+          this game.
+        </p>
+        <p>
+          Technically, for anyone who's interested, this game is made in Unity
+          and the audio is implemented through FMOD middleware but I'm not
+          really going to go into more of the specifics, this is more about the
+          user experience.
+        </p>
+        <p>
+          So without further ado we're going to be starting off with a new game
+          and I'll just be playing bits and pieces as we go and talking about
+          them so let's go!
+        </p>
+        <p>
+          Cool, so right of the bat, one of the things that I really love is how
+          the sound really hasn't changed from the opening credits into the very
+          opening of the game.
+        </p>
+        <p>
+          The only thing that happens is the sound of the tug boat coming in,
+          then leaving, and then we are as we are, so from then on the only
+          addition is the fact that as we're moving we can hear the lovely
+          grass, and that's that and we can still hear that constantly beautiful
+          seashore, lapping kind of sound there which we're actually going to
+          mute now for the rest of, well for at least the majority of the
+          playthrough because I want you to hear other things also... Hello to
+          our wonderful player there! "Hello!"
+        </p>
+        <p>
+          Alright, so what we're going to do is just get rid of the ambience
+          because we really want to focus on the music and the sounds.
+        </p>
+        <p>
+          OK, so what's going to happen now is we are going to push this log
+          over and when we do that will start a block of music this will start
+          one long track going and that's going to introduce the soundworld of
+          this particular game and as I'm playing I invite you to listen, I
+          invite you to recognise what's going on, you know, and if you don't
+          want any spoilers, close your eyes because it's a puzzle game and I
+          won't be saying any of the answers out loud, so, we're going to go and
+          let's have a shot.
+        </p>
+        <p>Beautiful.</p>
+        <p>
+          So finding a new area brings us that kind of, you know, cloud,
+          [inhales] gasp, it's a wonderful sound there. Pushing over a log, just
+          [makes "log being pushed" noise].
+        </p>
+        <p>
+          Gradually we'll notice that that music in the background is growing;
+          that *could* be vertical layering, so it could be adding more sounds
+          as we are progressing further but in actuality that is just the track
+          itself, so in this case I could just be stood at the very beginning
+          and it would play for its entirety, but this is something that people
+          do use and I do particularly like how this works because as you
+          solving the puzzles it's as if the world is kind of expanding around
+          you.
+        </p>
+        <p>It's gorgeous.</p>
+        <p>
+          And the instrumentation is lovely as well, so we've got that guitar,
+          bass, piano, really relaxed drums.
+        </p>
+        <p>
+          Quick note: there are lots of these exhibits and we're going to be
+          ignoring all of them for the sake of this for spoilers and also to
+          inspire you to go and check them out because they're all hilarious so
+          do check this out.
+        </p>
+        <p>
+          So... we now get to a point where that opening track has finished and
+          what we're left with is a low drone which is a D [*it's actually an
+          Ab] for anyone who cares, and what's really great is that from this
+          moment in time the game's approach to audio changes somewhat and we
+          have a layer of audio pretty much on top of all the sound effects that
+          we've just had and this is where things get really special for me. So
+          let's take a listen to what before was just us pushing a log and is
+          now... with the faintest little guitar part there, and let's push it
+          again:
+        </p>
+        <p>
+          And I just think it's magical, this way that from the static track
+          that we had before, that finishing leading us into this drone with
+          random blocks of what could be the case... you know, sorry... of
+          music, musical material, such a smooth transition that I was playing
+          it that I was playing it for the first time I really didn't notice
+          that it had happened until about half an hour through and it was such
+          a delight to realise.
+        </p>
+        <p>
+          Cool, so we're now going to push this into the water and again we're
+          going to... the next thing we're going to do is to look at a new
+          island
+        </p>
+        <p>
+          Oh and as another thing there's a random bit of piano there which I'm
+          pretty sure is cued from bout five pushes of the log.
+        </p>
+        <p>
+          So again that really help... helps add a different colour, which is
+          just a nice little thing.
+        </p>
+        <p>
+          OK so we're going to be revealing a new island, so previously it was
+          just a [inhales] that lovely kind of
+        </p>
+        <p>
+          inhale/exhale of the clouds clearing but we're going to joined by
+          something different now.
+        </p>
+        <p>
+          And now that sound has the actual... has that extra piano part and
+          that's just another little, nice thing and believe me, when these
+          puzzles get more and more complicated towards the end, hearing that,
+          knowing you've got to the next island is the most cathartic
+          experience.
+        </p>
+        <p>
+          Yeah, other things that we might have just noticed - the drone note
+          has changed; it's no longer a D [*it was actually an Ab] and these
+          kinds of things are just a lovely way that this game shows... sorry,
+          the audio can support the puzzle games' attitude towards using a few
+          small ingredients so, so well, you know that small shift gives this
+          island a different feeling to the previous one, even though it's a
+          relatively straightforward change.
+        </p>
+        <p>In fact I messed that up</p>
+        <p>I go along to the next island</p>
+        <p>Another change of the drone, which is fab</p>
+        <p>
+          right, and I'm just going to....do this island quickly and then I'll
+          talk through the next
+        </p>
+        <p>bit... oh and this one as well, my apologies</p>
+        <p>
+          Oh yeah... OK, so, just to kind of be a bit more explicit about this
+          music I'm actually going to mute the "sounds" and so we'll only be
+          able to hear just those musical cues.
+        </p>
+        <p>
+          OK so that's all muted and I won't talk while I do this little puzzle
+          so you can see what it's like.
+        </p>
+        <p>
+          So for anyone who actually knows the game that was a particularly
+          bizarre way of doing, of solving that puzzle so I do apologise
+        </p>
+        <p>
+          Right, so we're now going to just take a look at my favourite thing
+          that I realised as I was playing which was that as one of the sounds,
+          the undo button, because we're able to actually go back on our actions
+          also has a little musical idea... and... oh, whoops, my apologies...
+          there we go...
+        </p>
+        <p>
+          Here we go, OK, so take a listen to... in fact this one doesn't really
+          matter so let's keep going... OK great
+        </p>
+        <p>
+          So when... if you get stuck on an island then you can reset an island
+          and you can also go back by a move or two and what's lovely is if we
+          listen out to the sound that's associated with it.
+        </p>
+        <p>
+          Then we get this beautiful little ride cymbal, and that's again that's
+          such a lovely little touch that that's there going on.
+        </p>
+        <p>
+          Yeah so I'm just going to bring the... ah, yeah... yep, bring the
+          music back in and just in the context of everything let's just hear
+          that little bit.
+        </p>
+        <p>
+          You know, and, the thing is, one of the things that's so wonderful
+          about this game is that because it is... the music and the soundtrack
+          is essentially created by your own actions.
+        </p>
+        <p>
+          The faster you play the more frantic the soundtrack is, so especially
+          when you go "oh I'm going to do this, and this, and..."
+        </p>
+        <p>
+          you know, and you suddenly fill up the sonic space and it... so it
+          just feels like... I mean it is responding to my playing in this
+          really beautiful and cumulative way.
+        </p>
+        <p>
+          I just think it's absolutely fabulous. So, what we're going to do,
+          just to do the audio the credit it deserves we're going to turn back
+          the ambience, the ambience there, just we can hear the beautiful
+          sounds that are going on and then we've just got a few more islands to
+          go through so I'm pretty much just going to play through them.
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          And I'm not going to talk so that you can just listen to what the full
+          game should sound like.
+        </p>
+        <p>
+          And then this is the final island of the introductory bit, so we'll
+          just solve this super quickly... he says, hopefully, and then
+          immediately making a mistake.
+        </p>
+        <p>
+          And that is one of my favourite musical pay-offs in a game I have ever
+          experienced.
+        </p>
+        <p>
+          Just that way that as you are playing, and as you are going through
+          this soundtrack and you push off and you realise that you can push off
+          because that's a whole new thing.
+        </p>
+        <p>
+          And then you're just waiting there, and another track comes in, and
+          then it has that beautiful crescendo
+        </p>
+        <p>
+          And then the title screen splashes up and you're just like "I'm in a
+          very special game right now"
+        </p>
+        <p>
+          And that's how I feel about this, and what's really wonderful about
+          that segment is that it reminds you, the segment of music, is that it
+          reminds you that the instrumentation it has been using in both that
+          and in the first track, you know, at the very opening that
+          instrumentation is then used consistently throughout the game, so it
+          builds up this really consistent sonic palette of instrumentation.
+        </p>
+        <p>
+          And again that really helps to build up that idea in puzzle games of
+          using a few assets in the most flexible way using the most... using an
+          idea in every single possible way, and you know, for a game that's
+          essentially "pushing logs".
+        </p>
+        <p>
+          I am first of all just so impressed with it as a game and second of
+          all I just think the way they've approached the audio in that
+          generative, simplistic yet incredibly efficient way is an absolute
+          dream, and I whole heartedly recommend that everyone check it
+          out.&nbsp;
+        </p>
+        <p>
+          So, that is everything I wanted to say about the audio of this
+          wonderful game, which is called " A Monster's Expedition Through
+          Puzzling Exhibitions"
+        </p>
+        <p>
+          I very, very strongly recommend that everyone goes checks it out on
+          whatever device they have because you can probably find it somewhere
+        </p>
+        <p>
+          And a huge thank you to everyone of the... I mean, sorry, everyone
+          involved in making this not just for making it but for generally being
+          pretty lovely when I've asked them questions or like when I've got
+          stuck and obviously a huge, huge shout-out to the wonderful sound
+          designer, and let's make sure that we have the name of these beautiful
+          people.
+        </p>
+        <p>Eli Rainsberry, who's done a fantastic job on this</p>
+        <p>Cool, and we'll stop there, apologies to the concept artists</p>
+        <p>So...</p>
+        <p>and then fades out beautifully... cool</p>
+        <p>
+          So I hope you have enjoyed this video - basically I just quite like
+          the idea of putting together some videos where I play through bits of
+          games where I think the audio is amazing and this just seemed like
+          such an obvious first choice.
+        </p>
+        <p>
+          Anyway, I hope you've enjoyed and have yourselves a most wonderful
+          day, take care, bye.
+        </p>
+        <p>[OUTTAKES]</p>
+        <p>
+          And today we're going to be taking a look at a game I have thoroughly
+          enjoyed recently "A Monster's Expedition Through Puzzling Exhib..."
+          *general disgruntled noises* "A Monster's Exp... A Monster's
+          Expedition Through Puzzling Exhibitions, A Monster's..." "A Monster's
+          Expedition Through Puzzling Exhibitions, A Monster's Expedition
+          Through Puzzling Exp... Exhibitions, Exhibitions" "A Monster's
+          Expedition Through Puzzling Exhibitions"*bleerh* "A Monster's
+          Expedition Through Puzzling Exhibitions" alright, let's try that again
+          *claps*
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
