@@ -14,14 +14,7 @@ body {
 
 a {
   color: #fff;
-}
-
-h1 {
-  line-height: 1.4;
-}
-
-h2 {
-  padding-bottom: 20px;
+  text-decoration: none;
 }
 
 .btn {
@@ -33,11 +26,11 @@ h2 {
   cursor: pointer;
 }
 
-.btn:hover {
-  opacity: 0.9;
+a:hover {
+  opacity: 0.8;
 }
 
-.btn:focus {
+a:focus {
   outline: 0;
 }
 
@@ -55,78 +48,14 @@ h2 {
   flex-wrap: wrap;
 }
 
-.screen.up {
-  margin-top: -100vh;
+h1 {
+  margin-bottom: 0.5rem;
 }
 
-.birds-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
+h2 {
+  margin: 0.5rem;
 }
 
-.birds-list li {
-  margin: 10px;
-}
-
-.btn-audio {
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  cursor: pointer;
-  font-family: inherit;
-  width: 150px;
-  height: 150px;
-}
-
-.btn-audio:hover {
-  background-color: #fff;
-  color: #516dff;
-}
-
-.btn-audio:active {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.active {
-  border: 2px solid black;
-}
-
-audio {
-  scale: 164%;
-}
-
-.correct-answer {
-  border-color: gold;
-}
-
-.correct-answer-text {
-  text-decoration: underline;
-  color: gold;
-}
-
-.incorrect-answer {
-  border-color: red;
-}
-
-.visible {
-  visibility: visible;
-}
-.invisible {
-  visibility: hidden;
-}
-
-.bird-border-correct-answer {
-  border-color: green;
-}
-
-.bird-border-incorrect-answer {
-  border-color: red;
-}
-
-.secret-bird-name,
-.possible-bird-name {
-  text-transform: capitalize;
+em {
+  padding-bottom: 1rem;
 }

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 20px;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  margin: 0;
+  text-align: center;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+
+#transcript {
+  margin: 0 30px;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
