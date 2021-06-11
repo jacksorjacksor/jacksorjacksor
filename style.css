@@ -30,6 +30,17 @@ a {
   color: whitesmoke;
 }
 
+p {
+  margin: 0;
+  color: black;
+}
+
+.charity,
+p a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .link-button {
   text-decoration: none;
   padding: 8px;
