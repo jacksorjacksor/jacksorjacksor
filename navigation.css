@@ -1,0 +1,17 @@
+/* NAVIGATION */
+
+.navigation .nav-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.navigation .nav-button a {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  size: 16px;
+  text-decoration: none;
+}
