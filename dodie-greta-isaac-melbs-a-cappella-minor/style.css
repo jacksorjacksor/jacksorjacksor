@@ -1,0 +1,66 @@
+@import url('http://fonts.cdnfonts.com/css/poppins');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+/* NAV BAR */
+.navigation .nav-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(102, 102, 102, 0.2);
+  text-align: center;
+}
+
+.navigation .nav-button a {
+  color: #fff;
+  size: 16px;
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+#transcript {
+  margin: 0 30px;
+  flex-wrap: wrap;
+}
+
+.song-break {
+  background: gray;
+  border-radius: 20px;
+}
+
+.song-break:hover {
+  font-weight: bold;
+}
+
+.song-break a {
+  text-decoration: none;
+}
