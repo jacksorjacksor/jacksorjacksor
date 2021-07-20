@@ -56,3 +56,15 @@ h1:hover {
   color: whitesmoke;
   background: rgba(0, 0, 0, 0.2);
 }
+
+.mailing-list {
+  margin-top: 30px;
+}
+
+.mailing-list button {
+  margin-top: 20px;
+}
+
+.mailing-list button:hover {
+  cursor: pointer;
+}
