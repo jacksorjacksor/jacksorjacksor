@@ -1,0 +1,76 @@
+:root {
+  --primary-color: red;
+  --secondary-color: blue;
+  --primary-text: black;
+  --secondary-text: whitesmoke;
+  --animation-speed: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+.hidden {
+  visibility: hidden;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+section:nth-child(odd) {
+  background: var(--primary-color);
+}
+
+section:nth-child(odd) {
+  color: var(--primary-text);
+}
+
+section:nth-child(even) {
+  background: var(--secondary-color);
+  color: var(--secondary-text);
+}
+
+/* BUTTON DETAILS */
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  border: 1px black solid;
+  padding: 10px;
+  transition: all var(--animation-speed) ease-in-out;
+  background: var(--primary-text);
+  color: var(--secondary-text);
+}
+
+.btn:hover {
+  background: var(--secondary-text);
+  color: var(--primary-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  margin-left: 5px;
+  transform: translateY(2px);
+}
