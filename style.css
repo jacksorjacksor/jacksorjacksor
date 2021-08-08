@@ -68,3 +68,11 @@ h1:hover {
 .mailing-list button:hover {
   cursor: pointer;
 }
+
+.hero-image {
+  max-width: 200px;
+}
+
+.hero-image:hover {
+  border: black 1px solid;
+}
