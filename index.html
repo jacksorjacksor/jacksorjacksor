@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/navigation.css" />
     <link rel="shortcut icon" href="../images/jacksorjacksor-logo-test-1.jpg" />
-
+    <style>
+      .hidden{
+        visibility: hidden;
+      }
+    </style>
     <!-- Clicky analytics -->
     <script>
       var clicky_site_ids = clicky_site_ids || [];
@@ -45,15 +49,16 @@
     <br />
 
     <div class="mailing-list">
-      <h2 for="contact-form">Mailing List</h2>
-      <form name="contact" method="POST" data-netlify="true">
+      <h2 class="contact-form">Mailing List</h2>
+      <form name="new-contact" method="POST" data-netlify="true">
         <p>
-            <label>Your Email: <input type="email" name="email" /></label>
+          <label>Email: <input type="text" name="email" /></label>
         </p>
         <p>
-            <button type="submit">Send</button>
+          <button type="submit">Send</button>
         </p>
-    </form>
+      </form>
+    </div>
 
     <script src="script.js"></script>
   </body>
