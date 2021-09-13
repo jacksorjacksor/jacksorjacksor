@@ -1,3 +1,6 @@
+$darkened-color: darken($music-color, 8%);
+$lightened-color: lighten($music-color, 8%);
+
 .view-page {
     overflow: visible;
     &.music {
@@ -14,7 +17,13 @@ header {
         max-height: 30vw;
     }
 
-    text-align: center;
+    .main-title {
+        text-align: center;
+        padding: 2rem;
+        h1 {
+            font-size: 3rem;
+        }
+    }
 }
 
 section.hero-section {
@@ -23,7 +32,7 @@ section.hero-section {
 
     .hero-container {
         max-width: 80%;
-        background: darken($music-color, 1%);
+        background: $darkened-color;
         border-radius: 1rem;
         a {
             text-decoration: none;
@@ -38,25 +47,31 @@ section.hero-section {
                 transition: all 0.5s;
                 border-radius: 1rem;
                 &:hover {
-                    background: lighten($music-color, 8%);
+                    background: $lightened-color;
                     .hero-link {
                         background-color: $music-color;
                     }
                 }
+
+                .hero-latest-release {
+                }
                 .hero-title {
-                    padding: 1rem;
                     font-weight: bold;
                     font-size: 2rem;
+                    padding-bottom: 1rem;
+                    h2 {
+                        margin: 0;
+                    }
                 }
 
                 .hero-image {
                     position: relative;
-
+                    padding-bottom: 1rem;
                     .category {
                         position: absolute;
                         top: 0;
                         right: 0;
-                        padding: 0.5rem;
+                        padding: 0.8rem;
                         background: $tech-color;
                         opacity: 0.7;
                     }
@@ -71,6 +86,7 @@ section.hero-section {
     }
 }
 
+// CATEGORY!!!
 section.category {
     @include flex-column-center-center;
     .category-container {
@@ -79,6 +95,7 @@ section.category {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         .category-card {
+            width: 12rem;
             padding: 1rem;
             background: $tech-color;
             border-radius: 1rem;
@@ -86,6 +103,7 @@ section.category {
 
             &:hover {
                 background: lighten($tech-color, 8%);
+                font-weight: bold;
                 .hero-link {
                     background-color: $tech-color;
                 }
@@ -102,8 +120,24 @@ section.category {
                 }
             }
         }
+
+        &.filtered-container {
+            .category-card {
+                background: darken($tech-color, 20%);
+
+                &.filtered-card {
+                    background: $tech-color;
+                }
+                &:hover {
+                    background: lighten($tech-color, 8%);
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
+
+//body section.category div.category-container div.category-card.category-videos.filtered-out
 
 section.items {
     @include flex-column-center-center;
@@ -146,7 +180,7 @@ section.items {
                         position: absolute;
                         top: 0;
                         right: 0;
-                        padding: 0.5rem;
+                        padding: 0.8rem;
                         background: $tech-color;
                         opacity: 0.7;
                         font-size: 1rem;

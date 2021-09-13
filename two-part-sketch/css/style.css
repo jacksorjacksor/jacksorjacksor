@@ -235,12 +235,17 @@
   background: navy;
 }
 
-header {
-  text-align: center;
-}
-
 header .hero-image {
   max-height: 30vw;
+}
+
+header .main-title {
+  text-align: center;
+  padding: 2rem;
+}
+
+header .main-title h1 {
+  font-size: 3rem;
 }
 
 section.hero-section {
@@ -262,7 +267,7 @@ section.hero-section {
 
 section.hero-section .hero-container {
   max-width: 80%;
-  background: #7b001f;
+  background: #570016;
   border-radius: 1rem;
 }
 
@@ -300,20 +305,25 @@ section.hero-section .hero-container a .hero-inner-container:hover .hero-link {
 }
 
 section.hero-section .hero-container a .hero-inner-container .hero-title {
-  padding: 1rem;
   font-weight: bold;
   font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+section.hero-section .hero-container a .hero-inner-container .hero-title h2 {
+  margin: 0;
 }
 
 section.hero-section .hero-container a .hero-inner-container .hero-image {
   position: relative;
+  padding-bottom: 1rem;
 }
 
 section.hero-section .hero-container a .hero-inner-container .hero-image .category {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.5rem;
+  padding: 0.8rem;
   background: navy;
   opacity: 0.7;
 }
@@ -349,6 +359,7 @@ section.category .category-container {
 }
 
 section.category .category-container .category-card {
+  width: 12rem;
   padding: 1rem;
   background: navy;
   border-radius: 1rem;
@@ -358,6 +369,7 @@ section.category .category-container .category-card {
 
 section.category .category-container .category-card:hover {
   background: #0000a9;
+  font-weight: bold;
 }
 
 section.category .category-container .category-card:hover .hero-link {
@@ -385,6 +397,19 @@ section.category .category-container .category-card a div {
   font-size: 1.5rem;
   color: white;
   padding: 0.5rem;
+}
+
+section.category .category-container.filtered-container .category-card {
+  background: #00001a;
+}
+
+section.category .category-container.filtered-container .category-card.filtered-card {
+  background: navy;
+}
+
+section.category .category-container.filtered-container .category-card:hover {
+  background: #0000a9;
+  font-weight: bold;
 }
 
 section.items {
@@ -472,7 +497,7 @@ section.items .item-container .item-card a .item-image-wrapper .item-category {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.5rem;
+  padding: 0.8rem;
   background: navy;
   opacity: 0.7;
   font-size: 1rem;
@@ -486,6 +511,68 @@ section.items .item-container .item-card a .item-description {
 footer {
   text-align: center;
   background: black;
+}
+
+.detail-page a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.detail-page a:hover {
+  color: black;
+  opacity: 0.5;
+}
+
+.main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-title.detail-view {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.main-title.detail-view a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main-title.detail-view a:hover {
+  color: black;
+  opacity: 0.5;
+}
+
+.detail-section {
+  padding-bottom: 3rem;
+}
+
+.detail-section .detail-container {
+  padding: 0 3rem;
+}
+
+.back-home {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.divider {
+  width: 50vw;
+  margin: auto;
+  height: 1px;
+  background-color: black;
 }
 
 * {
@@ -504,6 +591,16 @@ body,
 body p,
 body h1 {
   margin: 0;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+img.hero-img {
+  height: 400px;
+  width: 400px;
 }
 
 section.landing > div {
