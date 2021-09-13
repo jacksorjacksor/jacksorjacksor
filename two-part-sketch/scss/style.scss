@@ -1,0 +1,75 @@
+@import 'variables.scss';
+@import 'navbar.scss';
+@import 'grids.scss';
+@import 'list_view.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $light-color;
+    width: 100vw;
+    overflow-x: hidden;
+
+    &,
+    p,
+    h1 {
+        margin: 0;
+    }
+}
+
+// LANDING PAGE
+section.landing > div {
+    //////////////////////////
+    // LAYOUT STYLINGS:
+    //////////////////////////
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+
+    > div {
+        @include hover-transition-to-black-transparent;
+    }
+
+    // Tech half
+    &.tech-landing {
+        flex-direction: column-reverse;
+        background-color: $tech-color;
+    }
+
+    // Music half
+    &.music-landing {
+        background-color: $music-color;
+    }
+
+    //////////////////////////
+    // CONTENT STYLINGS:
+    //////////////////////////
+    .site-name {
+        font-size: 2rem;
+    }
+    .header {
+        font-size: 3rem;
+        flex-direction: row;
+    }
+
+    .card {
+        // majority of this from "_grids.scss"
+        color: $dark-color;
+    }
+
+    .icon {
+        font-size: 3rem;
+        color: $light-color;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $light-color;
+}
