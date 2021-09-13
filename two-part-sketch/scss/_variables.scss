@@ -7,6 +7,18 @@ $tech-color: navy;
 $dark-color: black;
 $light-color: white;
 
+.tech-color {
+    color: $tech-color;
+}
+
+.music-color {
+    color: $music-color;
+}
+
+.menu-jacksorjacksor {
+    font-size: 3rem;
+    font-weight: bold;
+}
 // Mixin
 @mixin hover-transition-to-black-transparent {
     transition: all 0.5s;

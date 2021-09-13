@@ -1,4 +1,17 @@
 @import url("http://fonts.cdnfonts.com/css/poppins");
+.tech-color {
+  color: navy;
+}
+
+.music-color {
+  color: #800020;
+}
+
+.menu-jacksorjacksor {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 /* TOGGLE */
 .toggle {
   position: fixed;
@@ -583,7 +596,6 @@ footer {
 body {
   font-family: 'Poppins', sans-serif;
   color: white;
-  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -619,12 +631,12 @@ section.landing > div {
   font-size: 1rem;
 }
 
-section.landing > div > div {
+section.landing > div > div.landing-page-link {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-section.landing > div > div:hover {
+section.landing > div > div.landing-page-link:hover {
   color: black;
   opacity: 0.5;
 }
@@ -653,8 +665,89 @@ section.landing > div .header {
           flex-direction: row;
 }
 
-section.landing > div .card {
-  color: black;
+section.landing > div .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 30%;
+  background: #570016;
+  border-radius: 1rem;
+}
+
+section.landing > div .hero-container a {
+  text-decoration: none;
+}
+
+section.landing > div .hero-container a .hero-inner-container {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 1rem;
+}
+
+section.landing > div .hero-container a .hero-inner-container:hover {
+  background: #a9002a;
+}
+
+section.landing > div .hero-container a .hero-inner-container:hover .hero-link {
+  background-color: #800020;
+}
+
+section.landing > div .hero-container a .hero-inner-container img {
+  height: 150px;
+  width: 150px;
+}
+
+section.landing > div .hero-container a .hero-inner-container .hero-title {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+section.landing > div .hero-container a .hero-inner-container .hero-title h2 {
+  margin: 0;
+}
+
+section.landing > div .hero-container a .hero-inner-container .hero-image {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+section.landing > div .hero-container a .hero-inner-container .hero-image .category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.8rem;
+  background: navy;
+  opacity: 0.7;
+}
+
+section.landing > div .hero-container a .hero-inner-container .hero-description {
+  max-width: 60%;
+  text-align: center;
 }
 
 section.landing > div .icon {
