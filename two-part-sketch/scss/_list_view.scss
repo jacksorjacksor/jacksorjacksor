@@ -67,7 +67,7 @@ section.hero-section {
 
                 .hero-image {
                     position: relative;
-                    padding-bottom: 1rem;
+                    // padding-bottom: 1rem;
                     .category {
                         position: absolute;
                         top: 0;
@@ -81,6 +81,10 @@ section.hero-section {
                 .hero-description {
                     max-width: 60%;
                     text-align: center;
+                }
+
+                .hero-date-label {
+                    padding: 0;
                 }
             }
         }
@@ -189,6 +193,10 @@ section.items {
                 .item-description {
                     font-size: 1rem;
                     max-width: 60%;
+                }
+
+                .item-date-label {
+                    font-size: 1rem;
                 }
             }
         }
