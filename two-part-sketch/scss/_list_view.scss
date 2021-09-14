@@ -86,7 +86,7 @@ header {
 }
 
 // CATEGORY!!!
-section.category {
+.category {
     @include flex-column-center-center;
     .category-container {
         max-width: 1280px;

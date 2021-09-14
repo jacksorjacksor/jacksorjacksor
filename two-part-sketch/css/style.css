@@ -29,20 +29,32 @@
   font-weight: bold;
 }
 
-/* TOGGLE */
+.left-hand-jacksorjacksor-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.left-hand-jacksorjacksor-logo:hover {
+  color: var(--dark-color);
+  opacity: 0.5;
+}
+
+/* MENU TOGGLE */
 .toggle {
   position: fixed;
   top: 0;
   right: 0;
   width: 80px;
   height: 80px;
+  color: var(--dark-color);
+  font-weight: bold;
   background: var(--light-color);
-  background-size: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
   z-index: 20;
   cursor: pointer;
-  color: var(--dark-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +68,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: bold;
   rotate: 0deg;
   border-radius: 0;
   -webkit-transition: all 0.5s;
@@ -82,21 +93,7 @@
   background-repeat: no-repeat;
 }
 
-.left-hand-jacksorjacksor-logo {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  font-size: 1rem;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.left-hand-jacksorjacksor-logo:hover {
-  color: var(--dark-color);
-  opacity: 0.5;
-}
-
-/* NAVIGATION */
+/* NAV MENU (hidden by toggle) */
 .navigation {
   position: fixed;
   top: 0;
@@ -131,9 +128,8 @@
   text-align: center;
 }
 
-.navigation ul li .sublink > li > a {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+.navigation ul li .navigation-list-item-site-name {
+  font-size: 3rem;
 }
 
 .navigation ul li a {
@@ -149,6 +145,11 @@
 .navigation ul li a:hover {
   color: var(--dark-color);
   opacity: 0.5;
+}
+
+.navigation ul li .sublink > li > a {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .navigation .social-bar {
@@ -172,22 +173,6 @@
   display: inline-block;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-}
-
-.navigation .email-icon {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-}
-
-.navigation-list-item-site-name {
-  font-size: 3rem;
 }
 
 .landing > div {
@@ -442,7 +427,7 @@ header .main-title a:hover {
   font-style: italic;
 }
 
-section.category {
+.category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +443,7 @@ section.category {
           align-items: center;
 }
 
-section.category .category-container {
+.category .category-container {
   max-width: 1280px;
   display: -ms-grid;
   display: grid;
@@ -467,7 +452,7 @@ section.category .category-container {
   grid-gap: 1rem;
 }
 
-section.category .category-container .category-card {
+.category .category-container .category-card {
   width: 12rem;
   padding: 1rem;
   background: var(--secondary-darkened);
@@ -476,20 +461,20 @@ section.category .category-container .category-card {
   transition: all 0.5s;
 }
 
-section.category .category-container .category-card:hover {
+.category .category-container .category-card:hover {
   background: var(--secondary-lightened);
   font-weight: bold;
 }
 
-section.category .category-container .category-card:hover .hero-link {
+.category .category-container .category-card:hover .hero-link {
   background: var(--secondary-darkened);
 }
 
-section.category .category-container .category-card a {
+.category .category-container .category-card a {
   text-decoration: none;
 }
 
-section.category .category-container .category-card a div {
+.category .category-container .category-card a div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,15 +493,15 @@ section.category .category-container .category-card a div {
   padding: 0.5rem;
 }
 
-section.category .category-container.filtered-container .category-card {
+.category .category-container.filtered-container .category-card {
   background: var(--dark-color);
 }
 
-section.category .category-container.filtered-container .category-card.filtered-card {
+.category .category-container.filtered-container .category-card.filtered-card {
   background: var(--secondary-darkened);
 }
 
-section.category .category-container.filtered-container .category-card:hover {
+.category .category-container.filtered-container .category-card:hover {
   background: var(--secondary-lightened);
   font-weight: bold;
 }
