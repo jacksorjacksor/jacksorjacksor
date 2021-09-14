@@ -7,12 +7,28 @@ $tech-color: rgb(0, 0, 128);
 $dark-color: black;
 $light-color: white;
 
-.tech-color {
-    color: $tech-color;
+// Set as ROOT variables
+:root {
+    --primary-color: #{$music-color};
+    --primary-darkened: #{darken($music-color, 8%)};
+    --primary-lightened: #{lighten($music-color, 8%)};
+    --secondary-color: #{$tech-color};
+    --secondary-darkened: #{darken($tech-color, 8%)};
+    --secondary-lightened: #{lighten($tech-color, 8%)};
+    --dark-color: #{$dark-color};
+    --light-color: #{$light-color};
 }
 
-.music-color {
-    color: $music-color;
+// Class added to body to change ROOT variables
+.tech {
+    --primary-color: rgb(0, 0, 128);
+    --secondary-color: rgb(128, 0, 32);
+}
+
+// This is redundant as is default
+.music {
+    --primary-color: #{$music-color};
+    --secondary-color: #{$tech-color};
 }
 
 .menu-jacksorjacksor {
@@ -23,7 +39,7 @@ $light-color: white;
 @mixin hover-transition-to-black-transparent {
     transition: all 0.5s;
     &:hover {
-        color: $dark-color;
+        color: var(--dark-color);
         opacity: 0.5;
     }
 }

@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'navbar.scss';
+@import 'landing_page.scss';
 @import 'list_view.scss';
 @import 'detail_view.scss';
 
@@ -9,13 +10,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: $light-color;
-    overflow-x: hidden;
+    color: var(--light-color);
     &,
     p,
     h1 {
         margin: 0;
     }
+    background: var(--primary-color);
 }
 
 img {
@@ -28,112 +29,13 @@ img {
     }
 }
 
-// LANDING PAGE
-section.landing > div {
-    //////////////////////////
-    // LAYOUT STYLINGS:
-    //////////////////////////
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
-
-    > div.landing-page-link {
-        @include hover-transition-to-black-transparent;
-    }
-
-    // Tech half
-    &.tech-landing {
-        flex-direction: column-reverse;
-        background-color: $tech-color;
-    }
-
-    // Music half
-    &.music-landing {
-        background-color: $music-color;
-    }
-
-    //////////////////////////
-    // CONTENT STYLINGS:
-    //////////////////////////
-    .site-name {
-        font-size: 2rem;
-    }
-    .header {
-        font-size: 3rem;
-        flex-direction: row;
-    }
-
-    .hero-container {
-        @include flex-column-center-center;
-        max-width: 30%;
-        background: $darkened-color;
-        border-radius: 1rem;
-
-        a {
-            text-decoration: none;
-
-            .hero-inner-container {
-                padding: 1rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: $light-color;
-                transition: all 0.5s;
-                border-radius: 1rem;
-                &:hover {
-                    background: $lightened-color;
-                    .hero-link {
-                        background-color: $music-color;
-                    }
-                }
-
-                .hero-latest-release {
-                }
-                img {
-                    height: 150px;
-                    width: 150px;
-                }
-
-                .hero-title {
-                    font-size: 1rem;
-                    padding-bottom: 0.5rem;
-                    h2 {
-                        margin: 0;
-                    }
-                }
-
-                .hero-image {
-                    position: relative;
-                    padding-bottom: 1rem;
-                    .category {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        padding: 0.8rem;
-                        background: $tech-color;
-                        opacity: 0.7;
-                    }
-                }
-
-                .hero-description {
-                    max-width: 60%;
-                    text-align: center;
-                }
-            }
-        }
-    }
-
-    .icon {
-        font-size: 3rem;
-        color: $light-color;
-    }
+footer {
+    text-align: center;
+    background: var(--dark-color);
+    padding: 1rem;
 }
 
 a {
     text-decoration: none;
-    color: $light-color;
+    color: var(--light-color);
 }
