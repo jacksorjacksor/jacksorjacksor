@@ -4,8 +4,8 @@
   --primary-darkened: #570016;
   --primary-lightened: #a9002a;
   --secondary-color: navy;
-  --secondary-darkened: #000057;
-  --secondary-lightened: #0000a9;
+  --secondary-darkened: #00006c;
+  --secondary-lightened: #000094;
   --dark-color: black;
   --light-color: white;
 }
@@ -13,6 +13,10 @@
 .tech {
   --primary-color: rgb(0, 0, 128);
   --secondary-color: rgb(128, 0, 32);
+  --secondary-darkened: #570016;
+  --secondary-lightened: #a9002a;
+  --primary-darkened: #00006c;
+  --primary-lightened: #000094;
 }
 
 .music {
@@ -457,7 +461,7 @@ section.category .category-container {
 section.category .category-container .category-card {
   width: 12rem;
   padding: 1rem;
-  background: var(--secondary-color);
+  background: var(--secondary-darkened);
   border-radius: 1rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -469,7 +473,7 @@ section.category .category-container .category-card:hover {
 }
 
 section.category .category-container .category-card:hover .hero-link {
-  background: var(--secondary-color);
+  background: var(--secondary-darkened);
 }
 
 section.category .category-container .category-card a {
@@ -500,7 +504,7 @@ section.category .category-container.filtered-container .category-card {
 }
 
 section.category .category-container.filtered-container .category-card.filtered-card {
-  background: var(--secondary-color);
+  background: var(--secondary-darkened);
 }
 
 section.category .category-container.filtered-container .category-card:hover {
@@ -607,12 +611,6 @@ section.category .category-container.filtered-container .category-card:hover {
 .items .item-container .item-card a .item-date-label {
   font-size: 1rem;
   font-style: italic;
-}
-
-footer {
-  text-align: center;
-  background: var(--dark-color);
-  padding: 1rem;
 }
 
 .main-title {

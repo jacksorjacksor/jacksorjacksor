@@ -13,8 +13,8 @@ $light-color: white;
     --primary-darkened: #{darken($music-color, 8%)};
     --primary-lightened: #{lighten($music-color, 8%)};
     --secondary-color: #{$tech-color};
-    --secondary-darkened: #{darken($tech-color, 8%)};
-    --secondary-lightened: #{lighten($tech-color, 8%)};
+    --secondary-darkened: #{darken($tech-color, 4%)};
+    --secondary-lightened: #{lighten($tech-color, 4%)};
     --dark-color: #{$dark-color};
     --light-color: #{$light-color};
 }
@@ -23,6 +23,10 @@ $light-color: white;
 .tech {
     --primary-color: rgb(0, 0, 128);
     --secondary-color: rgb(128, 0, 32);
+    --secondary-darkened: #{darken($music-color, 8%)};
+    --secondary-lightened: #{lighten($music-color, 8%)};
+    --primary-darkened: #{darken($tech-color, 4%)};
+    --primary-lightened: #{lighten($tech-color, 4%)};
 }
 
 // This is redundant as is default

@@ -90,7 +90,7 @@ section.category {
         .category-card {
             width: 12rem;
             padding: 1rem;
-            background: var(--secondary-color);
+            background: var(--secondary-darkened);
             border-radius: 1rem;
             transition: all 0.5s;
 
@@ -98,7 +98,7 @@ section.category {
                 background: var(--secondary-lightened);
                 font-weight: bold;
                 .hero-link {
-                    background: var(--secondary-color);
+                    background: var(--secondary-darkened);
                 }
             }
 
@@ -119,7 +119,7 @@ section.category {
                 background: var(--dark-color);
 
                 &.filtered-card {
-                    background: var(--secondary-color);
+                    background: var(--secondary-darkened);
                 }
                 &:hover {
                     background: var(--secondary-lightened);
