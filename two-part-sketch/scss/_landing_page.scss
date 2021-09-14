@@ -13,16 +13,15 @@
     > div.landing-page-link {
         @include hover-transition-to-black-transparent;
     }
+    // Music half
+    &.music-landing {
+        flex-direction: column-reverse;
+        background-color: var(--primary-color);
+    }
 
     // Tech half
     &.tech-landing {
-        flex-direction: column-reverse;
         background-color: var(--secondary-color);
-    }
-
-    // Music half
-    &.music-landing {
-        background-color: var(--primary-color);
     }
 
     //////////////////////////
