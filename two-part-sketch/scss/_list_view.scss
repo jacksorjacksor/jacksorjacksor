@@ -93,8 +93,8 @@ section.category {
     .category-container {
         max-width: 1280px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
         .category-card {
             width: 12rem;
             padding: 1rem;
@@ -137,8 +137,6 @@ section.category {
         }
     }
 }
-
-//body section.category div.category-container div.category-card.category-videos.filtered-out
 
 section.items {
     @include flex-column-center-center;
