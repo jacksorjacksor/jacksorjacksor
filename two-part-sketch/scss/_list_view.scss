@@ -92,7 +92,7 @@ header {
         max-width: 1280px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1rem;
+        gap: 1rem;
         .category-card {
             width: 12rem;
             padding: 1rem;
@@ -145,7 +145,7 @@ header {
         max-width: 1280px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
+        gap: 1rem;
 
         .item-card {
             font-size: 1.5rem;

@@ -449,7 +449,7 @@ header .main-title a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 .category .category-container .category-card {
@@ -529,7 +529,7 @@ header .main-title a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 .items .item-container .item-card {
@@ -696,5 +696,36 @@ footer {
 a {
   text-decoration: none;
   color: var(--light-color);
+}
+
+@media (max-width: 800px) {
+  .navigation-list-item-site-name {
+    display: none;
+  }
+  .category {
+    margin: 1rem;
+  }
+  .category .category-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .category .category-container .category-card {
+    padding: 0;
+    margin: 0;
+  }
+  .category .category-container .category-card a div.category-title,
+  .category .category-container .category-card a div.category-icon {
+    padding: 0 0 0.5rem 0;
+    margin: 0;
+  }
+  .items .item-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  img.hero-img {
+    width: 200px;
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
