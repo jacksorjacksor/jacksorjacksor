@@ -343,6 +343,15 @@ header .main-title h1 {
   font-size: 3rem;
 }
 
+header .main-title a {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+header .main-title a:hover {
+  color: var(--dark-color);
+}
+
 .hero-section {
   padding: 2rem;
   display: -webkit-box;

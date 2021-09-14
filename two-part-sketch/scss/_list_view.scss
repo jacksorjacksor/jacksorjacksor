@@ -9,6 +9,12 @@ header {
         h1 {
             font-size: 3rem;
         }
+        a {
+            transition: color 0.5s;
+            &:hover {
+                color: var(--dark-color);
+            }
+        }
     }
 }
 
